@@ -7,7 +7,6 @@
 /cache
 # dependencies
 /node_modules
-/bower_components/*
 /deps*
 
 # misc
@@ -25,12 +24,5 @@ yarn-error.log
 testem.log
 lerna-debug.log
 
-packages/gynzy-teacher/ci/sitemap/node_modules
-packages/gynzy-teacher/ci/sitemap/library-sitemap-en.xml
-packages/gynzy-teacher/ci/sitemap/library-sitemap-nl.xml
-
 # don't ignore these
 !.gitignore
-
-
-.vercel
