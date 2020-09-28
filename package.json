@@ -1,0 +1,40 @@
+{
+	"name": "gynzy-frontend",
+	"private": true,
+	"workspaces": [
+		"packages/*",
+		"packages/unicorn-leerling/lib/*"
+	],
+	"scripts": {
+		"eslint": "eslint 'packages/**/{app,lib,tests,config,addon,translations}/**/*.js' --quiet",
+		"start": "cd ./packages/gynzy-teacher/ && node main.js"
+	},
+	"devDependencies": {
+		"babel-eslint": "10.0.3",
+		"eslint": "6.1.0",
+		"eslint-config-prettier": "6.1.0",
+		"eslint-plugin-ember": "7.0.0",
+		"eslint-plugin-import": "2.18.2",
+		"eslint-plugin-prettier": "3.0.1",
+		"eslint-plugin-sort-imports-es6-autofix": "0.4.0",
+		"husky": "3.0.9",
+		"lerna": "3.16.4",
+		"lint-staged": "9.2.4",
+		"prettier": "1.17.0"
+	},
+	"resolutions": {
+		"ember-cli-file-saver": "1.2.4",
+		"broccoli-clean-css": "2.0.1",
+		"ember-cli-sri": "2.1.1",
+		"prosemirror-model": "1.9.1"
+	},
+	"comments": {
+		"prosemirror-model": "prosemirror requires on one version of a package to be loaded: https://github.com/ProseMirror/prosemirror/issues/779"
+	},
+	"browserslist": [
+		"chrome >= 58",
+		"last 1 Firefox versions",
+		"safari >= 10",
+		"edge >= 18"
+	]
+}
